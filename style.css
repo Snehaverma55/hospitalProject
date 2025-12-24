@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(179, 179, 245);
+    align-items: center;
+    overflow: hidden;
+}
+
+.logo {
+    margin-left: 20px;
+    background-color: rgb(179, 179, 245);
+    padding: 10px;
+
+}
+
+img {
+    border-radius: 50%;
+    object-fit: cover;
+    /* prevents stretching */
+    border: 2px solid #fff
+}
+
+.hospital-name {
+    margin-left: 0px;
+    margin-top: 10px;
+    color: #443669;
+}
+
+.login {
+    margin-left: auto;
+    /* 🔥 THIS pushes it right */
+    padding: 8px 16px;
+    border: none;
+    font-size: x-large;
+    text-decoration: underline;
+    text-decoration-color: rgb(174, 55, 222);
+    text-decoration-style: solid;
+    
+    text-decoration-thickness: 2px;
+    color: rgb(174, 55, 222);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.notice{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    height: 40px;
+    color: #fff;
+    font-weight: bolder;
+}
+.admin{
+    font-weight: bold;
+    
+}
+.utility{
+    height: 300px;
+    width: 500px;
+    margin: 15px;
+    margin-top: 15px;
+       margin-bottom: 8px;
+    display: flex;
+    
+}
+.row1{
+    display: flex;
+    margin-bottom: 8px;
+    margin: 25px;
+    align-items: center;
+    justify-content: center;
+}
+.image img{
+    height: 70px;
+    width: 70px;
+    
+}
+.title{
+    margin-top: 18px;
+    margin-left: 8px;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.card{
+font-weight: 800;
+font-size: large;
+}
+.row2{
+    display: flex;
+    margin: 25px;
+    margin-top: 8px;
+    align-items: center;
+    justify-content: center;
+}
+.bed-card {
+    background: linear-gradient(135deg, #eef2ff, #fdfbff);
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 15px;
+    width: 280px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.bed-card:hover {
+    transform: scale(1.03);
+}
+
+.bed-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat .number {
+    font-size: 28px;
+    font-weight: bold;
+    display: block;
+}
+
+.stat .label {
+    font-size: 14px;
+    color: #555;
+}
+
+.stat.available .number {
+    color: green;
+}
+
+.stat.occupied .number {
+    color: red;
+}
+
+.status {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #443669;
+}
+
+.details-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(174, 55, 222);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.details-btn:hover {
+    background-color: rgb(140, 40, 190);
+}
+.icu-card,
+.doctor-card {
+    background: linear-gradient(135deg, #eef2ff, #fdfbff);
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 15px;
+    width: 280px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.icu-stats,
+.doctor-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat .number {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.stat .label {
+    font-size: 14px;
+    color: #555;
+}
+.doctor-card {
+    background: linear-gradient(135deg, #e8f7ff, #ffffff);
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 15px;
+    width: 300px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.doctor-card:hover {
+    transform: translateY(-5px);
+}
+
+.doctor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    font-weight: bold;
+    color: #1b4965;
+}
+
+.shift-label {
+    font-size: 14px;
+}
+
+.shift-time {
+    background-color: #1b4965;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 13px;
+}
+
+.doctor-stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.doctor-status {
+    background-color: #e6f4ff;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: #0b3c5d;
+    text-align: center;
+}
+.alert-card {
+    background: linear-gradient(135deg, #ffe5e5, #fff);
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 15px;
+    width: 300px;
+    box-shadow: 0 8px 18px rgba(255, 0, 0, 0.25);
+}
+
+.alert-message {
+    font-size: 16px;
+    font-weight: bold;
+    color: #b30000;
+    margin-bottom: 10px;
+}
+
+.alert-info {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.alert-btn {
+    background-color: #b30000;
+}
+.resource-card {
+    background: linear-gradient(135deg, #e8fff3, #ffffff);
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 15px;
+    width: 300px;
+    box-shadow: 0 8px 18px rgba(0, 150, 100, 0.2);
+}
+
+.resource-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.resource-status {
+    text-align: center;
+    font-weight: bold;
+    color: #006644;
+    margin-bottom: 12px;
+}
+.report-card {
+    background: linear-gradient(135deg, #f3e8ff, #ffffff);
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 15px;
+    width: 300px;
+    box-shadow: 0 8px 18px rgba(120, 0, 200, 0.2);
+}
+
+.report-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 12px;
+}
+
+.report-list li {
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+.report-note {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+
+
+
+

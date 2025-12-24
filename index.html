@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="logo.png" alt="" height="80px" width="100px"></div>
+            <div class="hospital-name">
+                <h1>MedPlus General Hospital</h1>
+            </div>
+            <div class="login">
+                <div class="admin"> Admin</div>
+            </div>
+        </nav>
+        <div class="notice">🚨 ICU beds critically low! Immediate action required.</div>
+
+    </header>
+    <main>
+        <div class="row1">
+           <div class="beds utility">
+    <div class="image">
+        <img src="image/hospital-bed.png" alt="">
+    </div>
+
+    <div class="title">
+        Bed Availability
+
+        <div class="bed-card" id="bedCard">
+            <div class="bed-stats">
+                <div class="stat">
+                    <span class="number" id="totalBeds"></span>
+                    <span class="label">Total</span>
+                </div>
+                <div class="stat available">
+                    <span class="number" id="availableBeds"></span>
+                    <span class="label">Available</span>
+                </div>
+                <div class="stat occupied">
+                    <span class="number" id="occupiedBeds"></span>
+                    <span class="label">Occupied</span>
+                </div>
+            </div>
+
+            <div class="status">
+                Status: <span id="bedStatus"></span>
+            </div>
+
+            <button class="details-btn">View Bed Details</button>
+        </div>
+    </div>
+
+
+
+                
+            </div>
+         
+            <div class="icu utility">
+    <div class="image">
+        <img src="image/emergency.png" alt="">
+    </div>
+
+    <div class="title">
+        ICU Status
+
+        <div class="icu-card" id="icuCard">
+            <div class="icu-stats">
+                <div class="stat">
+                    <span class="number" id="totalICU"></span>
+                    <span class="label">Total ICU</span>
+                </div>
+                <div class="stat available">
+                    <span class="number" id="availableICU"></span>
+                    <span class="label">Available</span>
+                </div>
+                <div class="stat occupied">
+                    <span class="number" id="occupiedICU"></span>
+                    <span class="label">Occupied</span>
+                </div>
+            </div>
+
+            <div class="status">
+                Status: <span id="icuStatus"></span>
+            </div>
+
+            <button class="details-btn">View ICU Details</button>
+        </div>
+    </div>
+</div>
+
+           <div class="doctor utility">
+    <div class="image">
+        <img src="image/medical-report.png" alt="">
+    </div>
+
+    <div class="title">
+        Doctors On Duty
+
+        <div class="doctor-card" id="doctorCard">
+            <div class="doctor-header">
+                <span class="shift-label">Current Shift</span>
+                <span class="shift-time" id="doctorShift">Morning</span>
+            </div>
+
+            <div class="doctor-stats">
+                <div class="stat">
+                    <span class="number" id="totalDoctors"></span>
+                    <span class="label">Total Doctors</span>
+                </div>
+                <div class="stat available">
+                    <span class="number" id="onDutyDoctors"></span>
+                    <span class="label">On Duty</span>
+                </div>
+                <div class="stat occupied">
+                    <span class="number" id="offDutyDoctors"></span>
+                    <span class="label">Off Duty</span>
+                </div>
+            </div>
+
+            <div class="doctor-status">
+                🩺 Adequate doctors available for patient care
+            </div>
+
+            <button class="details-btn">View Duty Roster</button>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div class="row2">
+            <div class="resource utility">
+    <div class="image">
+        <img src="image/electrocardiogram.png" alt="">
+    </div>
+
+    <div class="title">
+        Medical Resources
+
+        <div class="resource-card">
+            <div class="resource-stats">
+                <div class="stat">
+                    <span class="number">120</span>
+                    <span class="label">Oxygen Cylinders</span>
+                </div>
+                <div class="stat">
+                    <span class="number">45</span>
+                    <span class="label">Ventilators</span>
+                </div>
+            </div>
+
+            <div class="resource-status">
+                ✅ Resources are sufficient
+            </div>
+
+            <button class="details-btn">Manage Resources</button>
+        </div>
+    </div>
+</div>
+
+            <div class="recent-alerts utility">
+    <div class="image">
+        <img src="image/alarm.png" alt="">
+    </div>
+
+    <div class="title">
+        Emergency Alerts
+
+        <div class="alert-card">
+            <div class="alert-message">
+                🚨 ICU bed shortage detected
+            </div>
+
+            <div class="alert-info">
+                Last Updated: <span>2 mins ago</span>
+            </div>
+
+            <button class="details-btn alert-btn">View All Alerts</button>
+        </div>
+    </div>
+</div>
+
+            <div class="reports utility">
+    <div class="image">
+        <img src="image/analysis.png" alt="">
+    </div>
+
+    <div class="title">
+        Reports & Analytics
+
+        <div class="report-card">
+            <ul class="report-list">
+                <li>📈 Bed Occupancy Report</li>
+                <li>🩺 Doctor Attendance</li>
+                <li>🚑 Emergency Trends</li>
+            </ul>
+
+            <div class="report-note">
+                Updated daily at 12:00 AM
+            </div>
+
+            <button class="details-btn">View Reports</button>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
